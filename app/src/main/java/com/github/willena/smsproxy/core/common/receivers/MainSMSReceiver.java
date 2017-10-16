@@ -34,6 +34,7 @@ public class MainSMSReceiver extends BroadcastReceiver {
         //this.abortBroadcast();
         final Bundle bundle = intent.getExtras();
 
+
         try {
 
             if (bundle != null) {
