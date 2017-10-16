@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WebBySMS</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_label_contact">Contact to use:</string>
+    <string name="txt_label_session_name">Session Name:</string>
+    <string name="sw_label_hide_msg">Hide messages in default app</string>
+    <string name="txt_btn_start_session">Start Session</string>
+    <string name="txt_noName">Enter a name</string>
+</resources>

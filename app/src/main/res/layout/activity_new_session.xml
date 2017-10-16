@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.dgistudio.guillaume.webbysms.NewSession">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txt_label_session_name"
+        android:id="@+id/txtLabelSessionName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txt_label_contact"
+        android:id="@+id/textView2"
+        android:layout_marginTop="97dp"
+        android:layout_below="@+id/txtLabelSessionName"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sw_label_hide_msg"
+        android:textSize="20sp"
+        android:id="@+id/sw_hide_msg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:checked="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipt_SessionName"
+        android:layout_below="@+id/txtLabelSessionName"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/sw_hide_msg"
+        android:inputType="textCapWords"
+        android:hint="@string/txt_noName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_btn_start_session"
+        android:id="@+id/btnStartSession"
+        android:layout_below="@+id/sw_hide_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
